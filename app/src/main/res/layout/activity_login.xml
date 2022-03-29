@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:id="@+id/Layout_0"
+    >
 
     <LinearLayout
         android:id="@+id/Layout_1"
@@ -67,11 +69,11 @@
             android:layout_marginRight="10dp"
             android:text="LOGIN"/>
         <Button
-            android:id="@+id/BTT_singup"
+            android:id="@+id/BTT_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="SINGUP"/ >
+            android:text="SIGNUP"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/Layout_4"
