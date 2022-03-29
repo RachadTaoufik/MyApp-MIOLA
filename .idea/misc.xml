@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/layout/activity_help.xml" value="0.30007023465806165" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_professeurs.xml" value="0.250843505859375" />
+        <entry key="app/src/main/res/layout/professeur_item_layout.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/menu/menu_1.xml" value="0.18854166666666666" />
       </map>
     </option>
