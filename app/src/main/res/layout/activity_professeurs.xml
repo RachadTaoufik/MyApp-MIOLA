@@ -16,10 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="300dp" />
 
-    <Button
-        style="@style/Widget.Material3.ExtendedFloatingActionButton.Primary"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"/>
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_action_add"
+        android:contentDescription="add"
+        android:layout_margin="16dp" />
 
 </LinearLayout>
