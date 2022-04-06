@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
-            android:name=".ProfesseursActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".aboutActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ProfesseursActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
