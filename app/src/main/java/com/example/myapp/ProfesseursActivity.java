@@ -40,6 +40,7 @@ public class ProfesseursActivity extends AppCompatActivity {
         myrecycler=findViewById(R.id.myRecycler);
         profs=getAllProfesseurs();
         ProfesseurAdapter PA= new ProfesseurAdapter(profs,this);
+        myrecycler.setLayoutManager(layoutManager);
         myrecycler.setAdapter(PA);
 
     }
@@ -60,7 +61,7 @@ public class ProfesseursActivity extends AppCompatActivity {
                         }
                     }
                 });
-
+        System.out.println(profs);
         return profs;
 
     }
