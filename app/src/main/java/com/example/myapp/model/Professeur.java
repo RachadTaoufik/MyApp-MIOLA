@@ -11,10 +11,12 @@ public class Professeur {
     private  String photo;
     //...
 
-    public Professeur(String nom, String prenom, String tel){
-        nom= new String(nom);
-        prenom= new String(prenom);
-        tel= new String(tel);
+    public Professeur(String nom, String prenom, String tel, String departement, String photo){
+        this.nom= new String(nom);
+        this.prenom= new String(prenom);
+        this.tel= new String(tel);
+        this.departement=departement;
+        this.photo=photo;
 
     }
 
