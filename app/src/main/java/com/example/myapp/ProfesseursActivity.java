@@ -31,14 +31,17 @@ public class ProfesseursActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_professeurs);
-        FabAdd=findViewById(R.id.fabAdd);
 
-        layoutManager = new LinearLayoutManager(this);
+        FabAdd=findViewById(R.id.fabAdd);
+        profs= new LinkedList<Professeur>();
 
 
         db = FirebaseFirestore.getInstance();
+        getAllProfesseurs();
+
+        layoutManager = new LinearLayoutManager(this);
         myrecycler=findViewById(R.id.myRecycler);
-        profs=getAllProfesseurs();
+        getAllProfesseurs();
         ProfesseurAdapter PA= new ProfesseurAdapter(profs,this);
         myrecycler.setLayoutManager(layoutManager);
         myrecycler.setAdapter(PA);
@@ -46,7 +49,8 @@ public class ProfesseursActivity extends AppCompatActivity {
     }
 
 
-    LinkedList<Professeur> getAllProfesseurs(){
+
+    void getAllProfesseurs(){
         LinkedList<Professeur> profs= new LinkedList<Professeur>();
         db.collection("professeur")
                 .get()
@@ -55,15 +59,18 @@ public class ProfesseursActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
+
                                 Professeur prof = new Professeur(document.getString("Nom"),document.getString("Prenom").toString(),document.getString("Departement"),document.getString("Tel"),document.getString("Photo") );
+                                System.out.println("Un Prof"+prof.getNom());
                                 profs.add(prof);
                             }
+
                         }
+                        else
+                            System.out.println("Erreur!!!!!");
                     }
                 });
-        System.out.println(profs);
-        return profs;
-
+        System.out.println("La liste des profs :"+profs);
     }
 
 }
