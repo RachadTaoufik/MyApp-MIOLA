@@ -6,31 +6,33 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/photo_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="17dp"
         tools:layout_editor_absoluteY="210dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nom_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:text="Pr. Taoufik RACHAD"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintStart_toEndOf="@+id/photo_imageView"
+        tools:layout_editor_absoluteY="210dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/departement_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginTop="56dp"
         android:text="Departement WME"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/photo_imageView"
+        app:layout_constraintTop_toTopOf="@+id/photo_imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
