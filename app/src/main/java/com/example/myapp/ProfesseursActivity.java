@@ -39,13 +39,18 @@ public class ProfesseursActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         getAllProfesseurs();
 
+
+
+    }
+
+    protected void onStart(){
+        super.onStart();
         layoutManager = new LinearLayoutManager(this);
         myrecycler=findViewById(R.id.myRecycler);
         getAllProfesseurs();
         ProfesseurAdapter PA= new ProfesseurAdapter(profs,this);
         myrecycler.setLayoutManager(layoutManager);
         myrecycler.setAdapter(PA);
-
     }
 
 
@@ -69,6 +74,9 @@ public class ProfesseursActivity extends AppCompatActivity {
                         else
                             System.out.println("Erreur!!!!!");
                     }
+
+                    // intialiser la liste
+
                 });
         System.out.println("La liste des profs :"+profs);
     }
