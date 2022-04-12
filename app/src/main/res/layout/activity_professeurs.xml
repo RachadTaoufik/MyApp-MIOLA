@@ -5,24 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfesseursActivity"
-    android:gravity="center"
     android:orientation="vertical">
     <EditText
+        android:id="@+id/filtre_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Veuillez saisir votre requete "/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/myRecycler"
+        android:hint="Filtre "/>
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="wrap_content">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:src="@drawable/ic_action_add"
-        android:contentDescription="add"
-        android:layout_margin="16dp" />
+        <ListView
+            android:id="@+id/list_profs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_action_add"
+            android:contentDescription="add"
+            android:layout_margin="16dp" />
+
+    </FrameLayout>
+
 
 </LinearLayout>
