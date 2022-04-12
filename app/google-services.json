@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "701550312452",
+    "project_id": "miolapp",
+    "storage_bucket": "miolapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701550312452:android:aa1a1e0e6b49f312784951",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701550312452-8abpvlk46nuqpsa1knpkk45msfc85j8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhdZcQ-LJ7VVXq_1u6HEHyaDB5BDzS-lA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701550312452-8abpvlk46nuqpsa1knpkk45msfc85j8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
